@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <h1 class="display-4">Articles</h1>
+  <p class="lead"></p>
+  <hr class="my-4">
+
+
+    <% @articles.each do |article| %>
+      <article>
+        <h2><%= article.title%></h2>
+        <%= article.content%>
+        <hr class="my-4">
+      </article>
+    <% end %>
+  </ul>
+
+  <%= link_to 'Ajoutez une tâche', new_article_path %>
+</div>
+

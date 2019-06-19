@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts 'Seed Start'
+
+10.times {
+  Article.create(
+    title: Faker::TvShows::StrangerThings.character,
+    content: Faker::TvShows::StrangerThings.quote
+    )
+}
+
+puts 'Seed End'
